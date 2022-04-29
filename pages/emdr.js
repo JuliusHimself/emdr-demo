@@ -33,7 +33,7 @@ export default function Emdr() {
 		  <br/><br/><br/>
 		  <br />
 		  <h1 className={styles.title}>EMDR TESTS</h1>
-		  <p className={styles.description}>Lateral eye movements are the most commonly used external stimulus for EMDR treatment. Below are a few different ways to implement emdr virtually. Please let us know which one you like most in our <a className={styles.link} href="#">slack poll</a></p>
+		  <p className={styles.description}>Lateral eye movements are the most commonly used external stimulus for EMDR treatment. Below are a few different ways to implement emdr virtually. The challenge is to make an smooth animation that is entertaining enough to hold attention but not be the focus.</p>
 		  <br />
 		</div>
 
