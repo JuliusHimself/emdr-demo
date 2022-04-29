@@ -13,7 +13,7 @@ export default function EmdrTranslate() {
 	  <>
 		<div className={divStyles}>
 		  <h5>Translate-X</h5>
-		  <p>This animation is okay but there is too much blur/frame drop to be effective. It's blurry and kind of boring.</p>
+		  <p>This animation is okay but there is too much blur/frame drop to be effective. Its blurry and kind of boring.</p>
 		</div>
 		<Player
 			renderer="svg"
