@@ -1,8 +1,19 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import mental from '../public/animations/mental-wellbeing.json'
+import { Player } from '@lottiefiles/react-lottie-player';
+import Link from "next/link";
+import { css, cx } from '@emotion/react'
+import {Button} from "@mui/material";
+import Image from 'next/image'
+import TrendsImg from "../public/search-volume.png"
 
 export default function Home() {
+
+  const divStyles = css`
+  	padding: 14px;
+  `
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,43 +24,68 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          EMDR animations tests
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          EMDR (Eye Movement Desensitization and Reprocessing) is a psychotherapy that enables people to heal from the symptoms and emotional distress that are the result of disturbing life experiences.  Repeated studies show that by using EMDR therapy people can experience the benefits of psychotherapy that once took years to make a difference.
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Player
+            autoplay
+            src={mental}
+            style={{ height: '400px' }}
+        >
+          {/*<Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} />*/}
+        </Player>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <br/><br/><br/>
+        <Button variant="contained">
+          <Link href="/emdr">
+            See Our EMDR therapy tests
+          </Link>
+        </Button>
+        <br/><br/><br/>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+        <h1 className={styles.subtitle}>
+          Who can benefit from EMDR therapy?
+        </h1>
+        <p className={styles.paragraph}>
+          EMDR therapy helps children and adults of all ages. Therapists use EMDR therapy to address a wide range of challenges: </p>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+
+        <ul>
+          <li>Anxiety, panic attacks, and phobias</li>
+          <li>Chronic Illness and medical issues</li>
+          <li>Depression and bipolar disorders</li>
+          <li>Dissociative disorders</li>
+          <li>Eating disorders</li>
+          <li>Grief and loss</li>
+          <li>Pain</li>
+          <li>Performance anxiety</li>
+          <li>Personality disorders</li>
+          <li>PTSD and other trauma and stress-related issues</li>
+          <li>Sexual assault</li>
+          <li>Sleep disturbance</li>
+          <li>Substance abuse and addiction</li>
+          <li>Violence and abuse</li>
+        </ul>
+        <br/><br/><br/>
+        <h1 className={styles.subtitle}>
+          How popular is it?
+        </h1>
+        <p className={styles.paragraph}>
+          Take a look at the google trends data
+        </p>
+
+        <Image
+            src={TrendsImg}
+            alt="Picture of the author"
+            // width={500} automatically provided
+            // height={500} automatically provided
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+        />
       </main>
 
       <footer className={styles.footer}>
@@ -58,10 +94,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          EMDR DEMO - IH Hackathon 2022
         </a>
       </footer>
     </div>
