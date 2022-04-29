@@ -13,7 +13,7 @@ export default function EmdrClipPath() {
 	  <>
 		<div className={divStyles}>
 		  <h5>Clipping a line along a path</h5>
-		  <p>This animation is okay but there is too much blur/frame drop to be given a thumbs up</p>
+		  <p>This animation is would probably work well. The center of the line stay solid enough through the animation to hold focus, and the animation is just interesting enough to hold attention without being boring.</p>
 		</div>
 		<Player
 			renderer="svg"

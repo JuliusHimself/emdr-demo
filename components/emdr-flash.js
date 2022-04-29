@@ -13,7 +13,7 @@ export default function EmdrFlash() {
 	  <>
 		<div className={divStyles}>
 		  <h5>Flash using 2 dots and opacity</h5>
-		  <p>This animation is okay but there is too much blur/frame drop to be given a thumbs up</p>
+		  <p>This seems to be the most common way to do emdr online. It's not bad, but is the risk that after a few minutes the subject might start staring in the middle of the 2 dots and start using their peripheral vision instead. This would defeat the point of rapid eye movement.</p>
 		</div>
 		<Player
 			renderer="svg"

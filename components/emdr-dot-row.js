@@ -13,7 +13,7 @@ export default function EmdrDotRow() {
 	  <>
 		<div className={divStyles}>
 		  <h5>Row of dots using opacity</h5>
-		  <p>This animation is okay but there is too much blur/frame drop to be given a thumbs up</p>
+		  <p>For this animation the thought was to try and mimic a row of lights turning on/off similar to what you would you would see in an in person EMDR session. It didnt really turn out as expected and again is probably too blurry and boring to be effective.</p>
 		</div>
 		<Player
 			renderer="svg"

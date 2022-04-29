@@ -2,6 +2,7 @@ import EmdrTranslate from "../components/emdr-translate";
 import EmdrFlash from "../components/emdr-flash";
 import EmdrDotRow from "../components/emdr-dot-row";
 import EmdrClipPath from "../components/emdr-clip-path";
+import EmdrLineRotation from "../components/emdr-line-flip";
 import styles from "../styles/Home.module.css";
 import {Button} from "@mui/material";
 import {useEffect, useState} from "react";
@@ -44,14 +45,14 @@ export default function Emdr() {
 				<Tab label="Test 2: Dot Translate X" value="2" />
 				<Tab label="Test 3: Line clip path" value="3" />
 				<Tab label="Test 4: Dot row" value="4" />
-				<Tab label="Test 5: Dots lights" value="5" />
+				<Tab label="Test 5: Line rotation" value="5" />
 			  </TabList>
 			</Box>
 			<TabPanel value="1"><EmdrFlash /></TabPanel>
 			<TabPanel value="2"><EmdrTranslate /></TabPanel>
 			<TabPanel value="3"><EmdrClipPath /></TabPanel>
 			<TabPanel value="4"><EmdrDotRow /></TabPanel>
-			<TabPanel value="5">Item Three</TabPanel>
+			<TabPanel value="5"><EmdrLineRotation /></TabPanel>
 		  </TabContext>
 		</div>
 
