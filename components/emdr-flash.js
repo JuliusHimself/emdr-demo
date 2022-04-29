@@ -12,7 +12,7 @@ export default function EmdrFlash() {
   return (
 	  <>
 		<div className={divStyles}>
-		  <h5>Flash using 2 dotd and opacity</h5>
+		  <h5>Flash using 2 dots and opacity</h5>
 		  <p>This animation is okay but there is too much blur/frame drop to be given a thumbs up</p>
 		</div>
 		<Player

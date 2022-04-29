@@ -12,7 +12,7 @@ export default function EmdrClipPath() {
   return (
 	  <>
 		<div className={divStyles}>
-		  <h5>Row of dots using opacity</h5>
+		  <h5>Clipping a line along a path</h5>
 		  <p>This animation is okay but there is too much blur/frame drop to be given a thumbs up</p>
 		</div>
 		<Player
