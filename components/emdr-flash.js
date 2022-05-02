@@ -15,16 +15,19 @@ export default function EmdrFlash() {
 		  <h5>Flash using 2 dots and opacity</h5>
 		  <p>This seems to be the most common way to do emdr online. Its not bad, but is the risk that after a few minutes the subject might start staring in the middle of the 2 dots and start using their peripheral vision instead. This would defeat the point of rapid eye movement.</p>
 		</div>
+
+		<h5>Remderer: SVG</h5>
 		<Player
 			renderer="svg"
 			autoplay
 			loop
 			src={flash}
 			style={{ height: '100px' }}
-			speed={1}
+			speed={1.2}
 		>
 		  {/*<Controls visible={true} buttons={['play', 'stop', 'repeat', 'debug']} />*/}
 		</Player>
+
 	  </>
   )
 }

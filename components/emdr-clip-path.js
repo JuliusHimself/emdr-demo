@@ -21,7 +21,7 @@ export default function EmdrClipPath() {
 			loop
 			src={clipPath}
 			style={{ height: '100px' }}
-			speed={1}
+			speed={1.2}
 		>
 		  {/*<Controls visible={true} buttons={['play', 'stop', 'repeat', 'debug']} />*/}
 		</Player>

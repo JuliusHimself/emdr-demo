@@ -1,5 +1,5 @@
 import {Controls, Player} from "@lottiefiles/react-lottie-player";
-import dataTest from "../public/animations/data.json";
+import dataTest from "../public/animations/data2.json";
 import {css} from "@emotion/react"
 
 export default function EmdrLineRotations() {
@@ -21,7 +21,7 @@ export default function EmdrLineRotations() {
 			loop
 			src={dataTest}
 			style={{ height: '100px' }}
-			speed={1}
+			speed={1.2}
 		>
 		  {/*<Controls visible={true} buttons={['play', 'stop', 'repeat', 'debug']} />*/}
 		</Player>

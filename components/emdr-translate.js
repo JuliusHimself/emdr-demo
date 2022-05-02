@@ -21,7 +21,7 @@ export default function EmdrTranslate() {
 			loop
 			src={translate}
 			style={{ height: '100px' }}
-			speed={1}
+			speed={1.2}
 		>
 		  {/*<Controls visible={true} buttons={['play', 'stop', 'repeat', 'debug']} />*/}
 		</Player>
