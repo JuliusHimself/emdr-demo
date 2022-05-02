@@ -33,6 +33,7 @@ export default function Home() {
 
         <Player
             autoplay
+            keepLastFrame
             src={mental}
             style={{ height: '400px' }}
         >
