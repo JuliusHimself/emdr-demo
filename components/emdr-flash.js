@@ -16,7 +16,6 @@ export default function EmdrFlash() {
 		  <p>This seems to be the most common way to do emdr online. Its not bad, but is the risk that after a few minutes the subject might start staring in the middle of the 2 dots and start using their peripheral vision instead. This would defeat the point of rapid eye movement.</p>
 		</div>
 
-		<h5>Remderer: SVG</h5>
 		<Player
 			renderer="svg"
 			autoplay
